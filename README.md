@@ -2,6 +2,8 @@
 
 App em React de uma lista de tarefas.
 
+Feito com base no tutorial disponível em: https://www.kirupa.com/react/simple_todo_app_react.htm
+
 Melhorias a serem feitas:
 
 - Truncar o texto apenas se a tarefa tiver 2 linhas ou mais;
