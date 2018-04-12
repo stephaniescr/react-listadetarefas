@@ -14,13 +14,14 @@ class TodoItems extends Component {
   createTasks(item) {
     return <li key={item.key}>
                   <div>
-                    <a href="#" onClick={() => this.delete(item.key)}>
-                      <i class="fas fa-times"></i>
+                    <a  onClick={() => this.delete(item.key)}>
+                      <i className="fas fa-times"></i>
                     </a>
                   </div>
-                  {item.text}
+                  <div className="texto">{item.text}</div>
            </li>
   }
+
   render() {
     var todoEntries = this.props.entries;
     var listItems = todoEntries.map(this.createTasks);

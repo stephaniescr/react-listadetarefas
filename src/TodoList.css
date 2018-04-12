@@ -17,9 +17,9 @@
 }
 
 .todoListMain .header button:hover {
-  background-color: #d4ffee;
-  border: 2px solid #d4ffee;
-  color:#ccc;
+  background-color: #FFF;
+  border: 2px solid #FFF;
+  color:#bbb;
   cursor: pointer;
 }
 
@@ -36,36 +36,35 @@
   margin-bottom: 15px;
   border-radius: 5px;
   transition: background-color .2s ease-out;
-  text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
 }
 
-
-
-li div {
-  float: right;
-  width: 2px;
-  height: 2px;
-  display: inline-block;
-  margin: 1px 6px 0 3px;
-  color: #ccc;
-}
-
+/* mostrar texto completo no hover quando a tarefa tem mais de uma linha */
 .todoListMain .theList li:hover {
   background-color: #ffbbd6;
-  overflow: visible;
+  overflow:visible;
+  word-break: break-all;
   white-space: normal;
 }
 
-ul.theList {
-  padding: 0;
+.texto {
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .fa-times {
-  color: black;
+  float: right;
+  display: inline-block;
+  color: #bbb;
+  margin-left: 10px;
 }
 
 .fa-times:hover {
   color: #FFF;
+}
+
+
+ul.theList {
+  padding: 0;
 }

@@ -53,7 +53,7 @@ deleteItem(key) {
             <input  ref={(a) => this._inputElement = a}
                     placeholder="digite uma tarefa">
             </input>
-            <button type="submit"><i class="fas fa-plus"></i></button>
+            <button type="submit"><i className="fas fa-plus"></i></button>
           </form>
         </div>
         <TodoItems entries={this.state.items}
